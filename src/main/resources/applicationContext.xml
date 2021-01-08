@@ -6,9 +6,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="musicBean"
-          class="ru.skdvp.springcourse.TechnoMusic">
+          class="ru.skdvp.springcourse.ClassicalMusic">
     </bean>
 
+    <bean id="musicPlayer"
+          class="ru.skdvp.springcourse.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
+
+    </bean>
 
 
 </beans>
